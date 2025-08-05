@@ -20,8 +20,8 @@ Make sure you have Node.js and npm (or yarn) installed on your machine.
 
 1.  Clone the repository 
     
-    git clone <repository-url>
-    cd <project-directory>
+    git clone https://github.com/Chandankumar728/Todo-Task-Board.git
+   
     
 2.  Install NPM packages:
    
