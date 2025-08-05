@@ -3,6 +3,7 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Edit2, Trash2, Save, X } from 'lucide-react';
 import { updateTask, deleteTask } from '../firebase/taskService';
+import { useDraggable } from '@dnd-kit/core';
 
 const Task = ({ task, columnId }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -16,7 +17,7 @@ const Task = ({ task, columnId }) => {
     transform,
     transition,
     isDragging
-  } = useSortable({ id: task.id });
+  } = useDraggable({ id: task.id });
 
   const style = {
     transform: CSS.Transform.toString(transform),
