@@ -1,11 +1,10 @@
-import React from 'react';
 import { TaskBoardProvider } from './context/TaskBoardContext';
-import TaskBoard from './components/TaskBoard';
+import Task from './page/tasks';
 
 function App() {
   return (
     <TaskBoardProvider>
-      <TaskBoard />
+      <Task />
     </TaskBoardProvider>
   );
 }
