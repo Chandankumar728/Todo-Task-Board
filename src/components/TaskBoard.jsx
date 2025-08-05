@@ -102,10 +102,10 @@ const TaskBoard = () => {
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <h1 className="text-2xl font-bold text-gray-900">Task Board</h1>
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            {/* <div className="flex items-center gap-2 text-sm text-gray-600">
               <Users size={16} />
               <span>{state.onlineUsers} online</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
