@@ -64,7 +64,7 @@ const Column = ({ column }) => {
               value={columnTitle}
               onChange={(e) => setColumnTitle(e.target.value)}
               className="flex-1 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              onKeyPress={(e) => e.key === 'Enter' && handleUpdateColumn()}
+              onClick={(e) => e.key === 'Enter' && handleUpdateColumn()}
             />
             <button
               onClick={handleUpdateColumn}
